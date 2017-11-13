@@ -1583,7 +1583,7 @@ class UrlEncoder extends EncodeDecoderBase {
 				addslashes($sysLanguageUid)
 			);
 			$this->tsfe->set_no_cache($message);
-			$this->logger->error($message, debug_backtrace());
+			$this->logger->error($message);
 			throw new InvalidLanguageParameterException($sysLanguageUid);
 		}
 	}
